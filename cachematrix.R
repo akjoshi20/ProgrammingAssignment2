@@ -4,12 +4,15 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = numeric()) {
+#cache set to null
 cache <- NULL
+#store a matrix
 setmatrix <- function(newvalue) {
 x << newvalue
+#cache set to null
 cache <- NULL
 }
-
+#returning matrix
 getmatrix <- function() {
 x
 }
@@ -36,7 +39,7 @@ return(:inverse)
 data <- x$getmatrix()
 inverse <- solve(data)
 x$cacheInverse(inverse)
-
+# returning value of inverse
 inverse
 }
 
